@@ -128,7 +128,7 @@
 /* mobile */
 @media (max-width: 739px) {
   #card {
-    height: 54vh;
+    height: 56vh;
     box-shadow: rgba(236, 31, 85, 0.2) 0px 8px 24px;
     transform: translateY(0);
   }
@@ -148,7 +148,7 @@
     border: solid 2px black;
   }
   .modal_lay {
-    background-color: rgba(236, 31, 85, 0.1);
+    background-color: rgba(236, 31, 85, 0.2);
   }
   .cake {
     cursor: none;
