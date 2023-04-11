@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../HappyBirthday"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "NganHieu"
+  }
+}

@@ -1,0 +1,182 @@
+.birthday {
+}
+
+#card {
+  position: relative;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  height: 56vh;
+  box-shadow: rgba(236, 31, 85, 0.2) 0px 8px 24px;
+  transform: translateY(-12%);
+  transition: all linear 0.3s;
+}
+.cake-image {
+  width: 100%;
+  background-image: url("./thiep3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card__container {
+  background-color: white;
+  overflow-y: auto;
+  box-shadow: 0 -50px 18px -28px #f1d5db inset;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: var(--primary-color);
+}
+.card__container::-webkit-scrollbar {
+  display: none;
+}
+.birthday_title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  padding: 24px 0px 0px;
+}
+.birthday_wish {
+  font-family: cursive;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+.birthday_date {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  padding: 8px 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.day {
+  background-color: #ec1f55;
+  border-radius: 50%;
+  padding: 4px 10px;
+  position: relative;
+  top: 6px;
+  display: block;
+  color: #fff6ee;
+}
+.birthday_desc {
+  padding: 12px 16px;
+}
+.birthday_desc p {
+  font-family: cursive;
+  font-size: 20px;
+  color: #dc7b91;
+  text-align: center;
+  text-shadow: 0 0 black;
+}
+.closeBtn {
+  position: absolute;
+  background-color: transparent;
+  color: #ec1f55;
+  font-weight: 400;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 56px;
+  right: -14px;
+  top: -32px;
+}
+.modal_lay {
+  position: fixed;
+  /* width: 100%; */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /* height: 100%; */
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  transition: all linear 0.3s;
+}
+.modal_body {
+  width: 100%;
+  max-width: 480px;
+  padding: 10px;
+  transition: all ease-in 0.4s;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  opacity: 0;
+  transform: translateY(-200%);
+  margin: auto;
+}
+.close-card button {
+}
+
+.open-2 {
+  display: block !important;
+  z-index: 2;
+}
+
+.open-3 {
+  transform: translateY(-50%);
+  z-index: 4;
+  opacity: 1;
+}
+/* mobile */
+@media (max-width: 739px) {
+  #card {
+    height: 54vh;
+    box-shadow: rgba(236, 31, 85, 0.2) 0px 8px 24px;
+    transform: translateY(0);
+  }
+  .closeBtn {
+    bottom: -35px;
+    top: unset;
+    right: unset;
+    transform: translateX(-50%);
+    left: 50%;
+    background: rgba;
+    padding: 6px 18px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: rgba(236, 31, 85, 0.2) 0px 8px 24px;
+    background: rgba(236, 31, 85, 0.8);
+    color: aliceblue;
+    font-size: 34px;
+  }
+  .cake {
+    cursor: none;
+    opacity: 1;
+  }
+  .open-3 {
+    transform: translateY(-85%);
+  }
+  .day {
+    top: 0;
+    padding: 2px 8px;
+    font-size: 24px;
+  }
+}
+/* cakeBtn */
+.cake {
+  position: absolute;
+  background-image: url(./cakesn.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 68px;
+  height: 68px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all linear 0.2s;
+}
+.cake:hover {
+  opacity: 1;
+}

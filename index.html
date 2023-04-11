@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./card.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.png" />
+    <title>Hiếu Ngân</title>
+    <style>
+      .birthday.on {
+        display: flex;
+      }
+      .birthday.off {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="player">
+      <!-- birthday card -->
+
+      <div class="modal_lay"></div>
+      <div class="modal_body">
+        <div id="card">
+          <div class="cake-image"></div>
+          <div class="card__container">
+            <h1 class="birthday_title">Happy Birthday to You</h1>
+            <h2 class="birthday_wish">
+              Chúc mừng bợn Ngân <br />
+              bước sang tuổi 21
+            </h2>
+            <div class="birthday_date">
+              <span class="month">TH.4</span>
+              <span class="day">12</span>
+              <span class="year">2023</span>
+            </div>
+            <div class="birthday_desc">
+              <p>
+                Tặng cậu 1 web nghe nhạc do chính tay tớ code <br />
+                nếu muốn thêm bài hát nào cứ liên hệ tớ :v <br />
+                à qua ngày sinh nhật thì cái thiệp này sẽ không tự hiện, có cái
+                logo bánh sinh nhật á, ấn vào nếu thích
+              </p>
+            </div>
+          </div>
+          <div class="closeBtn">x</div>
+        </div>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="dashboard">
+        <!-- icon sinh nhat -->
+        <div class="cake"></div>
+        <!-- Header -->
+        <header>
+          <h4>Now playing:</h4>
+          <h2>String 57th & 9th</h2>
+        </header>
+
+        <!-- CD -->
+        <div class="cd">
+          <div
+            class="cd-thumb"
+            style="
+              background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg');
+            "
+          ></div>
+        </div>
+
+        <!-- Control -->
+        <div class="control">
+          <div class="btn btn-repeat">
+            <i class="fas fa-redo"></i>
+          </div>
+          <div class="btn btn-prev">
+            <i class="fas fa-step-backward"></i>
+          </div>
+          <div class="btn btn-toggle-play">
+            <i class="fas fa-pause icon-pause"></i>
+            <i class="fas fa-play icon-play"></i>
+          </div>
+          <div class="btn btn-next">
+            <i class="fas fa-step-forward"></i>
+          </div>
+          <div class="btn btn-random">
+            <i class="fas fa-random"></i>
+          </div>
+        </div>
+
+        <input
+          id="progress"
+          class="progress"
+          type="range"
+          value="0"
+          step="1"
+          min="0"
+          max="100"
+        />
+
+        <audio id="audio" src=""></audio>
+      </div>
+
+      <!-- Playlist -->
+      <div class="playlist"></div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+  <script src="./birthday.js"></script>
+</html>
