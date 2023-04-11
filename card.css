@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   display: flex;
   height: 56vh;
   box-shadow: rgba(236, 31, 85, 0.2) 0px 8px 24px;
@@ -93,7 +93,7 @@
   right: 0;
   left: 0;
   /* height: 100%; */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   display: none;
   transition: all linear 0.3s;
 }
@@ -133,7 +133,7 @@
     transform: translateY(0);
   }
   .closeBtn {
-    bottom: -35px;
+    bottom: -48px;
     top: unset;
     right: unset;
     transform: translateX(-50%);
@@ -142,16 +142,20 @@
     padding: 6px 18px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: rgba(236, 31, 85, 0.2) 0px 8px 24px;
-    background: rgba(236, 31, 85, 0.8);
+    background: rgba(93, 49, 150, 1);
     color: aliceblue;
     font-size: 34px;
+    border: solid 2px black;
+  }
+  .modal_lay {
+    background-color: rgba(236, 31, 85, 0.1);
   }
   .cake {
     cursor: none;
     opacity: 1;
   }
   .open-3 {
-    transform: translateY(-70%);
+    transform: translateY(-68%);
   }
   .day {
     top: 0;
